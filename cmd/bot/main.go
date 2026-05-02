@@ -4,6 +4,7 @@ import (
 	"log/slog"
 	"os"
 
+	"github.com/bwmarrin/discordgo"
 	"github.com/joho/godotenv"
 )
 
@@ -15,5 +16,11 @@ func main() {
 		os.Exit(1)
 	}
 
-	slog.Info("Selam")
+	discordBotToken := os.Getenv("DISCORD_BOT_TOKEN")
+
+	discord, err := discordgo.New("Bot " + discordBotToken)
+	if err != nil {
+		slog.Error("Failed setting up Discord client", "error", err)
+		os.Exit(1)
+	}
 }
