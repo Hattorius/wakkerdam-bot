@@ -56,7 +56,7 @@ Je krijgt:
 3. Samenvattingen van de afgelopen dagen voor context
 4. Een lijst van alle spelers met hun gebruikersnaam en weergavenaam
 
-Let op: spelers verwijzen vaak naar elkaar bij naam zonder te taggen. Gebruik de spelerslijst om te begrijpen over wie het gaat. Meerdere namen of bijnamen kunnen naar dezelfde persoon verwijzen.
+Let op: spelers verwijzen vaak naar elkaar bij naam zonder te taggen. Gebruik de spelerslijst om te begrijpen over wie het gaat. Meerdere namen of bijnamen kunnen naar dezelfde persoon verwijzen. In de berichten zie je Discord-gebruikersnamen (bijv. "l02398"), maar in je samenvatting MOET je altijd de weergavenaam gebruiken (bijv. "BolleJos"). Verwijs NOOIT naar spelers met hun Discord-gebruikersnaam — gebruik uitsluitend de weergavenaam uit de spelerslijst.
 
 Je samenvatting MOET exact twee secties bevatten:
 
