@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"log/slog"
+	"math/rand"
 	"os"
 	"os/signal"
 	"time"
@@ -16,6 +17,28 @@ import (
 )
 
 var s *discordgo.Session
+
+var reactionEmojis = []string{
+	"a:e:1494384237623902338",
+	"a:e:1494384226286702602",
+	"a:e:1494384384503971920",
+	"a:e:1494295909683691731",
+	"a:e:1494295859922468955",
+	"a:e:1494384380141899880",
+	"a:e:1474112014400884778",
+	"a:e:1494295977148940408",
+	"a:e:1494384592533324008",
+	"a:e:1494295736685432842",
+	"a:e:1494383628015243505",
+	"a:e:1494383643261407313",
+	"a:e:1482293157449171156",
+	"a:e:1479075456828575906",
+	"a:e:1494383990096789515",
+	"a:e:1494384235279155240",
+	"a:e:1474119208697729076",
+	"a:e:1494384909194891455",
+	"a:e:1499672802654158929",
+}
 
 var commands = []*discordgo.ApplicationCommand{
 	{
@@ -194,11 +217,15 @@ func main() {
 		}
 
 		isPlayer := conf.IsPlayer(m.Author.ID)
-		config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp)
 
 		if m.Content == "geef me samenvatting papi" {
+			emoji := reactionEmojis[rand.Intn(len(reactionEmojis))]
+			s.MessageReactionAdd(m.ChannelID, m.ID, emoji)
 			go handleOnDemandSummary(s, m)
+			return
 		}
+
+		config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp)
 	})
 
 	s.AddHandler(func(s *discordgo.Session, r *discordgo.Ready) {
@@ -244,13 +271,12 @@ func handleOnDemandSummary(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	testMsg, err := s.ChannelMessageSend(ch.ID, "Even kijken of ik je kan bereiken... 👀")
+	_, err = s.ChannelMessageSend(ch.ID, "IK BEN ER MEE BEZIG WACHT FF")
 	if err != nil {
 		slog.Error("Failed sending test DM", "error", err)
 		s.ChannelMessageSendReply(m.ChannelID, "dan moet je wel je dms openen, aap", m.Reference())
 		return
 	}
-	s.ChannelMessageDelete(ch.ID, testMsg.ID)
 
 	msgs := config.GetMessages()
 	storyMsgs := config.GetStoryMessages()
@@ -258,9 +284,23 @@ func handleOnDemandSummary(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	summaryText := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
 
-	_, err = s.ChannelMessageSend(ch.ID, summaryText)
-	if err != nil {
-		slog.Error("Failed sending summary DM", "error", err)
+	for len(summaryText) > 0 {
+		chunk := summaryText
+		if len(chunk) > 2000 {
+			chunk = summaryText[:2000]
+			for i := len(chunk) - 1; i > 1500; i-- {
+				if chunk[i] == '\n' {
+					chunk = chunk[:i+1]
+					break
+				}
+			}
+		}
+		_, err = s.ChannelMessageSend(ch.ID, chunk)
+		if err != nil {
+			slog.Error("Failed sending summary DM", "error", err)
+			return
+		}
+		summaryText = summaryText[len(chunk):]
 	}
 }
 
@@ -352,15 +392,35 @@ func scheduleDailySummary(s *discordgo.Session) {
 
 		config.SaveSummary(summaryText)
 
-		msg, err := s.ChannelMessageSend(*channelID, summaryText)
-		if err != nil {
-			slog.Error("Failed sending daily summary", "error", err)
-			continue
+		var firstMsg *discordgo.Message
+		remaining := summaryText
+		for len(remaining) > 0 {
+			chunk := remaining
+			if len(chunk) > 2000 {
+				chunk = remaining[:2000]
+				for i := len(chunk) - 1; i > 1500; i-- {
+					if chunk[i] == '\n' {
+						chunk = chunk[:i+1]
+						break
+					}
+				}
+			}
+			msg, err := s.ChannelMessageSend(*channelID, chunk)
+			if err != nil {
+				slog.Error("Failed sending daily summary", "error", err)
+				break
+			}
+			if firstMsg == nil {
+				firstMsg = msg
+			}
+			remaining = remaining[len(chunk):]
 		}
 
-		err = s.ChannelMessagePin(*channelID, msg.ID)
-		if err != nil {
-			slog.Error("Failed pinning daily summary", "error", err)
+		if firstMsg != nil {
+			err := s.ChannelMessagePin(*channelID, firstMsg.ID)
+			if err != nil {
+				slog.Error("Failed pinning daily summary", "error", err)
+			}
 		}
 
 		config.ClearMessages()

@@ -133,7 +133,7 @@ func GenerateSummary(messages string, storyMessages string, recentSummaries []co
 	userContent.WriteString(messages)
 
 	reqBody := chatRequest{
-		Model: "gpt-5-mini",
+		Model: "gpt-5.4-mini",
 		Messages: []chatMessage{
 			{Role: "system", Content: systemPrompt},
 			{Role: "user", Content: userContent.String()},
