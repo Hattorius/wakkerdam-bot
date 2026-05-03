@@ -258,7 +258,7 @@ func main() {
 		registeredCommands[i] = cmd
 	}
 
-	go scheduleDailySummary(s)
+	go scheduleDailySummaries(s)
 
 	defer s.Close()
 
@@ -412,12 +412,31 @@ func catchUpChannel(s *discordgo.Session, channelID string, isStory bool, lastKn
 	}
 }
 
-func scheduleDailySummary(s *discordgo.Session) {
+func scheduleDailySummaries(s *discordgo.Session) {
 	for {
 		now := time.Now()
-		next := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, now.Location())
 
-		timer := time.NewTimer(time.Until(next))
+		// Calculate next 20:00 and next 00:00
+		next20 := time.Date(now.Year(), now.Month(), now.Day(), 20, 0, 0, 0, now.Location())
+		if !now.Before(next20) {
+			next20 = next20.Add(24 * time.Hour)
+		}
+		next00 := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, now.Location())
+		if !now.Before(next00) {
+			next00 = next00.Add(24 * time.Hour)
+		}
+
+		var nextTime time.Time
+		var isMidnight bool
+		if next20.Before(next00) {
+			nextTime = next20
+			isMidnight = false
+		} else {
+			nextTime = next00
+			isMidnight = true
+		}
+
+		timer := time.NewTimer(time.Until(nextTime))
 		<-timer.C
 
 		channelID := config.Get().Channel
@@ -425,18 +444,26 @@ func scheduleDailySummary(s *discordgo.Session) {
 			continue
 		}
 
-		yesterday := time.Now().Add(-1 * time.Minute).Format("2006-01-02")
-		msgs := config.GetMessagesByDate(yesterday)
+		var date string
+		if isMidnight {
+			date = time.Now().Add(-1 * time.Minute).Format("2006-01-02")
+		} else {
+			date = time.Now().Format("2006-01-02")
+		}
+
+		msgs := config.GetMessagesByDate(date)
 		if msgs == "" {
 			continue
 		}
 
-		storyMsgs := config.GetStoryMessagesByDate(yesterday)
-		recentSummaries := config.GetSummariesBefore(yesterday)
+		storyMsgs := config.GetStoryMessagesByDate(date)
+		recentSummaries := config.GetSummariesBefore(date)
 
 		summaryText := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
 
-		config.SaveSummary(summaryText)
+		if isMidnight {
+			config.SaveSummary(summaryText)
+		}
 
 		var firstMsg *discordgo.Message
 		remaining := summaryText
@@ -469,8 +496,10 @@ func scheduleDailySummary(s *discordgo.Session) {
 			}
 		}
 
-		config.ClearMessages()
-		config.ClearStoryMessages()
-		config.FlushMessages()
+		if isMidnight {
+			config.ClearMessages()
+			config.ClearStoryMessages()
+			config.FlushMessages()
+		}
 	}
 }
