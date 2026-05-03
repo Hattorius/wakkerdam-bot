@@ -7,6 +7,7 @@ import (
 	"math/rand"
 	"os"
 	"os/signal"
+	"sync"
 	"time"
 
 	"github.com/Hattorius/wakkerdam-bot/internal/config"
@@ -17,6 +18,13 @@ import (
 )
 
 var s *discordgo.Session
+
+var (
+	cachedSummary     string
+	cachedSummaryTime time.Time
+	summaryInFlight   chan struct{}
+	cacheLock         sync.Mutex
+)
 
 var reactionEmojis = []string{
 	"a:e:1494384237623902338",
@@ -278,11 +286,7 @@ func handleOnDemandSummary(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	msgs := config.GetMessages()
-	storyMsgs := config.GetStoryMessages()
-	recentSummaries := config.GetRecentSummaries(3)
-
-	summaryText := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
+	summaryText := getOrGenerateSummary()
 
 	for len(summaryText) > 0 {
 		chunk := summaryText
@@ -303,6 +307,45 @@ func handleOnDemandSummary(s *discordgo.Session, m *discordgo.MessageCreate) {
 		}
 		summaryText = summaryText[len(chunk):]
 	}
+}
+
+func getOrGenerateSummary() string {
+	cacheLock.Lock()
+
+	if cachedSummary != "" && time.Since(cachedSummaryTime) < 5*time.Minute {
+		result := cachedSummary
+		cacheLock.Unlock()
+		return result
+	}
+
+	if summaryInFlight != nil {
+		ch := summaryInFlight
+		cacheLock.Unlock()
+		<-ch
+		cacheLock.Lock()
+		result := cachedSummary
+		cacheLock.Unlock()
+		return result
+	}
+
+	summaryInFlight = make(chan struct{})
+	cacheLock.Unlock()
+
+	msgs := config.GetMessages()
+	storyMsgs := config.GetStoryMessages()
+	recentSummaries := config.GetRecentSummaries(3)
+	result := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
+
+	cacheLock.Lock()
+	cachedSummary = result
+	cachedSummaryTime = time.Now()
+	ch := summaryInFlight
+	summaryInFlight = nil
+	cacheLock.Unlock()
+
+	close(ch)
+
+	return result
 }
 
 func catchUpMessages(s *discordgo.Session) {
