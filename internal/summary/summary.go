@@ -80,6 +80,11 @@ Een opsomming van alle harde feiten die op dit moment bekend zijn:
 - Wat de spelleider heeft bevestigd
 - Welke nachtacties er bekend zijn
 
+BELANGRIJK:
+- Herhaal GEEN informatie die al in de eerdere samenvattingen staat. De eerdere samenvattingen zijn alleen voor jouw context, niet om te herhalen. Focus uitsluitend op wat er NIEUW is gebeurd sinds de laatste samenvatting.
+- Zeg niets dubbel. Als je iets al hebt benoemd in de Gebeurtenissen-sectie, herhaal het dan niet in de Feiten-sectie (en andersom). Verwijs kort als het nodig is, maar kopieer geen informatie.
+- Wees bondig. Geen inleidingen, geen afsluitingen, geen samenvattende zinnen. Ga direct to the point.
+
 Houd de samenvatting objectief en neutraal. Geef geen eigen mening of speculaties. De samenvatting moet consistent en reproduceerbaar zijn — ongeacht wie hem opvraagt, de inhoud moet gelijk zijn. Schrijf alles in het Nederlands.`
 
 type chatMessage struct {
