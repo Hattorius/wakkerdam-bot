@@ -159,12 +159,8 @@ var commandHandlers = map[string]func(s *discordgo.Session, i *discordgo.Interac
 }
 
 func main() {
-	err := godotenv.Load()
-
-	if err != nil {
-		slog.Error("Failed loading environmental variables from .env file", "error", err)
-		os.Exit(1)
-	}
+	_ = godotenv.Load()
+	var err error
 
 	discordBotToken := os.Getenv("DISCORD_BOT_TOKEN")
 
