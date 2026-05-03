@@ -331,9 +331,10 @@ func getOrGenerateSummary() string {
 	summaryInFlight = make(chan struct{})
 	cacheLock.Unlock()
 
-	msgs := config.GetMessages()
-	storyMsgs := config.GetStoryMessages()
-	recentSummaries := config.GetRecentSummaries(3)
+	today := time.Now().Format("2006-01-02")
+	msgs := config.GetMessagesByDate(today)
+	storyMsgs := config.GetStoryMessagesByDate(today)
+	recentSummaries := config.GetSummariesBefore(today)
 	result := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
 
 	cacheLock.Lock()
@@ -424,13 +425,14 @@ func scheduleDailySummary(s *discordgo.Session) {
 			continue
 		}
 
-		msgs := config.GetMessages()
+		yesterday := time.Now().Add(-1 * time.Minute).Format("2006-01-02")
+		msgs := config.GetMessagesByDate(yesterday)
 		if msgs == "" {
 			continue
 		}
 
-		storyMsgs := config.GetStoryMessages()
-		recentSummaries := config.GetRecentSummaries(3)
+		storyMsgs := config.GetStoryMessagesByDate(yesterday)
+		recentSummaries := config.GetSummariesBefore(yesterday)
 
 		summaryText := summary.GenerateSummary(msgs, storyMsgs, recentSummaries)
 
