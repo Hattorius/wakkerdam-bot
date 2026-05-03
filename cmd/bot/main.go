@@ -268,17 +268,17 @@ func catchUpMessages(s *discordgo.Session) {
 	conf := config.Get()
 
 	if conf.Channel != nil {
-		catchUpChannel(s, *conf.Channel, false)
+		catchUpChannel(s, *conf.Channel, false, config.GetLastMessageTime())
 	}
 
 	if conf.StoryChannel != nil {
-		catchUpChannel(s, *conf.StoryChannel, true)
+		catchUpChannel(s, *conf.StoryChannel, true, config.GetLastStoryMessageTime())
 	}
 
 	slog.Info("Finished catching up messages")
 }
 
-func catchUpChannel(s *discordgo.Session, channelID string, isStory bool) {
+func catchUpChannel(s *discordgo.Session, channelID string, isStory bool, lastKnown *time.Time) {
 	var allMessages []*discordgo.Message
 	var beforeID string
 	for {
@@ -292,7 +292,19 @@ func catchUpChannel(s *discordgo.Session, channelID string, isStory bool) {
 			break
 		}
 
-		allMessages = append(allMessages, msgs...)
+		reachedExisting := false
+		for _, m := range msgs {
+			if lastKnown != nil && !m.Timestamp.After(*lastKnown) {
+				reachedExisting = true
+				break
+			}
+			allMessages = append(allMessages, m)
+		}
+
+		if reachedExisting {
+			break
+		}
+
 		beforeID = msgs[len(msgs)-1].ID
 
 		if len(msgs) < 100 {

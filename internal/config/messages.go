@@ -130,6 +130,34 @@ func GetStoryMessages() string {
 	return strings.Join(storyMessages, "\n")
 }
 
+func lastTimestampFromLines(lines []string) *time.Time {
+	if len(lines) == 0 {
+		return nil
+	}
+	last := lines[len(lines)-1]
+	if len(last) < 21 || last[0] != '[' {
+		return nil
+	}
+	dateStr := last[1:20]
+	t, err := time.ParseInLocation("2006-01-02 15:04:05", dateStr, time.Now().Location())
+	if err != nil {
+		return nil
+	}
+	return &t
+}
+
+func GetLastMessageTime() *time.Time {
+	messagesLock.RLock()
+	defer messagesLock.RUnlock()
+	return lastTimestampFromLines(messages)
+}
+
+func GetLastStoryMessageTime() *time.Time {
+	storyMessagesLock.RLock()
+	defer storyMessagesLock.RUnlock()
+	return lastTimestampFromLines(storyMessages)
+}
+
 func ClearMessages() {
 	messagesLock.Lock()
 	defer messagesLock.Unlock()
