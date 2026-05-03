@@ -298,6 +298,7 @@ func handleOnDemandSummary(s *discordgo.Session, m *discordgo.MessageCreate) {
 		_, err = s.ChannelMessageSend(ch.ID, chunk)
 		if err != nil {
 			slog.Error("Failed sending summary DM", "error", err)
+			s.ChannelMessageSend(ch.ID, "bro Idk what I did wrong but you should probably tell Hattorius")
 			return
 		}
 		summaryText = summaryText[len(chunk):]
