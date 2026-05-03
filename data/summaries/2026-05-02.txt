@@ -1,0 +1,64 @@
+## Gebeurtenissen
+- Verhaallijn / achtergrond:
+  - 1 mei: de (voormalige) burgemeester overleed; er volgde een burgemeestersverkiezing waarin feta1234 (Feta) met een klein blok van vijf stemmen werd gekozen tot burgemeester. De spelleider plaatste verhaaltjes ter omlijsting van de gebeurtenissen.  
+
+- Nacht / ochtend (2 mei):
+  - De gamemaster meldde dat er ’s nachts een aanval plaatsvond: constructed_ (MVC / HitsigeMasseur) werd gevonden verslonden door de weerwolven. De spelleider bevestigde later dat MVC een normale burger was. De heks besloot MVC niet te reviven.  
+  - De Raaf (speciale burgerrol) meldde aan de gamemasters dat hij Hattorius verdacht vond; deze aanwijzing levert die speler één extra stem op tijdens de stemming.
+
+- Dag: verdachtmakingen en discussie:
+  - De chat vulde zich met verdachte aanwijzingen, analyses en wederzijdse beschuldigingen. Veel discussie draaide om:
+    - Het ‘Feta-blok’ (de groep die Feta tot burgemeester koos) — enkele spelers vonden het verdacht dat Feta en zijn steuners snel en georganiseerd stemden.
+    - De aanwijzing van de Raaf tegen Hattorius — dat leidde tot een push om Hattorius te stemmen.
+    - Stilte/afwezigheid van bepaalde spelers (o.a. Tiebs / kingsiembonno_81140) als reden om ze te verdenken.
+    - Een eerdere verdachtmaking (MVC noemde Jonas verdacht) en de vraag of dat met MVC’s dood samenhangt.
+  - De spelleiders gaven meerdere verduidelijkingen over rollen en mechanics (o.a. werking van de Raaf, Heks, ziener, dat speciale rollen doorgaans één per spel zijn, en dat de heks geen rol te zien krijgt bij een revive).
+
+- Stemming (avond):
+  - De stembus (via de gedeelde stemwebsite) werd gesloten; er waren ruim twintig stemmen ingeleverd. De spelleider kondigde aan dat bij de uitslag bekendgemaakt wordt wie op wie heeft gestemd.
+  - Uitslag en uitvoering: JonasDeMooisteVis (mistajonesss) werd naar het schavot gestuurd — de spelleider beschreef dat de beslissende groep bestond uit HitsigeMasseur, Merel, Sinn, BolleJos, tiebs en YungMarnix (zij bepaalden het lot dat avond).
+  - Direct na de ophanging gebeurde er een wending: Jonas bleek te ontwaken — er lag een leeg flesje naast het schavot; iemand (de Heks) had Jonas een tweede kans gegeven. Jonas bleef levend in de game.
+
+- Nasleep / claims:
+  - In de chat en roleplay nam Jonas (mistajonesss) daarna het voortouw in een verhaallijn: hij beschreef dat hij stilletjes rondging en (in de verhaallijn) een rode potion in iemands mond dronk; dit leidde tot een claim/insinuatie dat tiebs mogelijk de volgende ochtend niet wakker zou worden. De gamemasters lieten de mogelijkheid open (niet direct bevestigd als officiële nachtactie door de gamemasters).
+  - Spelleider gaf toelichting: de heks krijgt vooraf een DM met de vraag of ze wil reviven; de heks ziet de rol van de dode niet. De heks heeft nog één gifdrankje over (als dodelijke actie).
+
+- Administratief / regels:
+  - De gamemasters kondigden een wijziging aan: vanaf morgen wordt de stemperiode ingekort van 20:00–23:00 naar 20:00–22:00.
+  - De gamemaster deelde ook links naar de stem-archieven en herinnerde aan hoe de Raaf en andere rollen werken. Er waren geen missies die dag.
+
+## Feiten
+- Eliminaties / rolopenbaringen:
+  - MVC / constructed_ (HitsigeMasseur) werd gevonden dood (nacht van 1→2 mei). De spelleider bevestigde: rol = gewone burger. De heks redde MVC niet.  
+  - JonasDeMooisteVis (mistajonesss) werd tijdens de dagstemmingsronde gelyncht, maar direct daarna door de Heks gerevived — Jonas is (voorlopig) levend gebleven. De spelleider toonde een verhaalbeschrijving en bevestigde dat Jonas weer wakker werd; een leeg flesje werd genoemd.  
+  - De spelleider bevestigde dat de heks na deze revive nog wél een gifdrankje bezit (dus de levensdrank is gebruikt).
+
+- Stemmen / uitslagen:
+  - Burgemeestersverkiezing (1 mei): Feta (feta1234) won; volgens de spelleider had hij een blok van vijf medestanders: YungMarnix, DeKapitein (captainwyvern), Hattorius, Gebakkenxkip en Dirkinater. Meerdere andere kandidaten eindigden dichtbij met vier stemmen.  
+  - Dagstemmingsronde (2 mei): de spelleider meldde een nipte meerderheid die leidde tot de lynch. De groep die in de aankondiging genoemd werd als bepalend voor de lynch op Jonas: HitsigeMasseur (mcello071), nahamori (Merel), .sin____ (Sinn), l02398 (BolleJos), kingsiembonno_81140 (tiebs) en yungmarnix (YungMarnix).  
+  - Tijdens de stemming kregen Tiebs en Hattorius elk vijf stemmen (de spelleider noemde dit in de verhaallijn). Dirkinater ontving ook stemmen maar bleef in leven.
+
+- Rollen / mechanics bevestigd door spelleider:
+  - De Raaf gaf aan wie hij verdacht vindt; die persoon krijgt 1 extra stem. De Raaf is een burger en kan geen rollen zien. De gamemaster noemde expliciet dat de Raaf Hattorius als verdacht aanmerkte.  
+  - De Heks ontvangt een DM wanneer er een dode valt en kan beslissen of ze die persoon wil reviven; de heks ziet de rol van de dode niet. De heks kan daarnaast één gifdrankje op ieder moment inzetten.  
+  - De Jager kan alleen schieten op het moment vlak voordat hij sterft (de spelleider verduidelijkte de werking).  
+  - Speciale rollen zijn doorgaans één exemplaar per spel (door gamemaster bevestigd); aantal weerwolven liet de gamemaster onduidelijk (spelinschatting door spelers lag rond 5–6).
+
+- Bekende nachtacties / wie wat deed:
+  - Weerwolven-moord: MVC werd ‘s nachts door weerwolven gedood (door de gamemasters bevestigd).  
+  - Heks-acties: de Heks gebruikte haar levensdrankje om Jonas te redden tijdens de dag/executie (gerevived). De Heks heeft nog een gifdrankje (dodelijk) beschikbaar.  
+  - Claim (door speler Jonas / mistajonesss, niet officieel bevestigd door gamemasters): Jonas beschreef dat hij na de revive een rode potion in het huis van Tiebs heeft gegoten en suggereerde dat Tiebs morgenochtend niet meer wakker zal worden — de gamemasters lieten deze bewering als mogelijkheid open maar bevestigden niet direct dat dit een officiële nachtactie van Jonas was.
+
+- Beschuldigingen / waarom (objectief gerapporteerd zoals in chat):
+  - Feta / het ‘Feta-blok’: meerdere spelers noemden de snelle, georganiseerde steun voor Feta verdacht (argument: blokstemmen en snelle organisatie).  
+  - Hattorius: aangewezen door de Raaf als verdacht; dit veroorzaakte veel push tegen Hattorius. Enkele spelers wezen erop dat Hattorius op Feta stemde tijdens de burgemeestersverkiezing (niet op zichzelf), wat door sommigen als tactiek werd geïnterpreteerd.  
+  - Jonas: werd door MVC vóór MVC’s dood als verdacht genoemd; Jonas kreeg daarna stemmen en werd uiteindelijk gelyncht (maar gered).  
+  - Tiebs (kingsiembonno_81140): kreeg kritiek/verdachtmakingen wegens weinig activiteit (stilte) en vanwege stemgedrag in eerdere rondes; later door Jonas genoemd in de verhaallijn als mogelijk doelwit.  
+  - Diverse spelers wezen op “luidruchtige” vs “stille” spelers als strateegedrag; spelers noemden onder anderen HitsigeMasseur, Hattorius en anderen als opvallend actief of juist actief sturend.
+
+- Spelleideraankondigingen / administratief:
+  - Stemplatform en archive-link werden gedeeld (wakkerdamstembureau.replit.app en archive/1). De spelleider gaf aan dat na de sluiting inzicht wordt gegeven in wie op wie stemde.  
+  - Er komt geen missie vandaag; de stemperiode wordt vanaf morgen ingekort naar 20:00–22:00.  
+  - De gamemasters benadrukten neutrale samenvattingen en herhaalden mechanica-clarificaties (Raaf, Heks, ziener, beschermers, jager, enz.).
+
+Opmerking: veel claims in de chat (o.a. Jonas’ nachtelijke acties tegen Tiebs) zijn door spelers gemaakt als roleplay of suggestie; de gamemasters hebben sommige elementen bevestigd (revive door Heks, MVC = burger, Raaf-aanwijzing Hattorius), andere beweringen blijven ongeregistreerde player-claims totdat de gamemasters expliciet bevestigen.

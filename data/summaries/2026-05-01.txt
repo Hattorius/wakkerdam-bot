@@ -1,0 +1,35 @@
+## Gebeurtenissen
+- 01 mei (03:26) — Spelleider opende met verhaallijn: de (voormalige) burgemeester van Wakkerdam is dood; dorpsbewoners houden begrafenis en verzamelen in het kerkje. De spelleider kondigt aan dat er vanavond een nieuwe burgemeester gekozen wordt (aanmelden tot de aangegeven deadline; uitslag later).  
+- Ochtend en middag — Veel spelers reageren op de introductie, stellen zich kandidaat voor het burgemeesterschap (onder anderen Feta, Juniiya, Dwaallicht/darklord21, Gebakkenxkip, Hattorius, mcello071). Er ontstaan veel informele discussies over rollen, hoeveelheden en spelmechanica (cupido, kamikaze, heks, enz.).  
+- Spelers trekken verdachte trekken van elkaar: opmerkingen en verdenkingen richten zich onder meer op vroege steun voor kandidaten (met name Feta), profielfoto’s (volle maan / mcello071), ontbrekende vermelding in de verhaallijn (Jonas/mistajonesss genoemd als opvallend), en het gebruik van externe AI (“GPT”) door Hattorius. Diverse spelers noemen elkaar “sus” of suggereren dat bepaalde acties verdacht zijn.  
+- 01 mei (10:29) — Spelleider (bicyclebag) deelt de link naar het stemplatform (wakkerdamstembureau.replit.app) en legt uit dat stemmen anoniem zijn, maar dat na sluiting bekend wordt wie op wie heeft gestemd; spelleider vermeldt ook dat bij overlijden de rol wordt onthuld (met mogelijk uitstel als de Heks haar levensdrankje inzet).  
+- Vanaf middag — Campagne en stemmen lopen: spelers beloven stemmen aan kandidaten, sommigen melden “gestemd”. Spelleider herinnert meerdere keren aan aanmelden/stemmen; er wordt aangegeven dat er al 10 stemmen binnen zijn (18:11).  
+- 01 mei (21:04–21:47) — Spelleider maakt de uitslag bekend: feta1234 (weergavenaam Feta) is gekozen tot burgemeester. De gamemaster publiceert een toelichting met stempatronen: Feta won nipt dankzij een blok van vijf stemmen. Kort daarna wordt de nacht aangekondigd; er is nog geen melding van nachtelijke slachtoffers.  
+- Nacht (na 21:47) — Spelers reageren op de uitslag, bespreken wie mogelijk gevaar loopt vannacht (volle maan genoemd), en maken plannen/verdachtmakingen; er is geen officiële bekendmaking van een slachtoffer in de verstrekte logs.
+
+## Feiten
+- Verhaallijn / spelleideraankondigingen:
+  - Spelleider opende het spel met het verhaal dat de (voormalige) burgemeester is overleden (01 mei).  
+  - Spelleider deelde het stemplatform: https://wakkerdamstembureau.replit.app/ (10:29).  
+  - Spelleider gaf aan dat wanneer iemand sterft de rol wordt onthuld, tenzij de Heks iemand redt (10:00).  
+  - Spelleider kondigde later aan dat de uitslag van de burgemeesterverkiezing bekend is gemaakt (21:04–21:47).  
+- Burgemeesterverkiezing (uitslag en stemblokken) — volgens de spelleider:
+  - Gewonnen kandidaat: feta1234 (Feta).  
+  - Feta won dankzij een trouw blok van vijf medestanders: YungMarnix, DeKapitein (captainwyvern), Hattorius, Gebakkenxkip en Dirkinater.  
+  - Meerdere andere kandidaten eindigden kort daarachter met vier stemmen elk:
+    - Juniiya had vier stemmen (aanhangers genoemd door de spelleider: DrGoatSlayer, Merel/nahamori, tiebs en Juniiya).  
+    - HitsigeMasseur (mcello071) ontving steun van Roiant, Grinchgo, Rembrandt (fulollypop) en Michiel_de_Snuiver (vincla) — maar werd niet gekozen.  
+    - Hattorius kreeg steun van LauweLaura (appelsap.), Held (jeheudel), MVC (constructed_) en BolleJos (l02398).  
+- Stemproces:
+  - Stemmen werden anoniem uitgebracht via de gedeelde website; spelleider meldde dat na sluiting altijd bekend wordt gemaakt wie op wie heeft gestemd.  
+  - De spelleider meldde halverwege de avond dat er al tien stemmen binnen waren (18:11).  
+- Eliminaties / nachtacties:
+  - In de verstrekte logs is geen officiële melding van een spelereliminatie tijdens de nacht. De spelleider kondigde de nacht aan ná de burgemeesterverkiezing; de volgende ochtend (ongeveer 9:00) zou normaal de spelleider bekendmaken wie vermoord is.  
+- Verdachtmakingen en beschuldigingen (objectief gerapporteerd zoals in chat):
+  - Captainwyvern noemde vroege steun voor Feta “verdacht” en maakte meerdere opmerkingen over wie “sus” overkomt.  
+  - Vincla vroeg expliciet of Feta een weerwolf is en merkte ook op dat een vollemaan-profielfoto (mcello071) verdacht oogt.  
+  - Constructed_ noemde Jonas/mistajonesss opvallend omdat hij “niet in het verhaal voorkwam” en noemde hem daarom verdacht.  
+  - Diverse spelers wezen (grappend of semi-serieus) naar andraen als mogelijk verdacht (o.a. opmerkingen rond Hattorius en het gebruik van “GPT” als verdedigingsmiddel; en suggesties dat Dwaallicht/darklord21 mogelijk doelwit/verdacht is).  
+- Spelersacties vermeld in chat:
+  - Meerdere spelers meldden zich als kandidaat of gaven campagnebeloftes; enkelen bevestigden dat ze gestemd hadden (bijv. drgoatslayer: “Gestemd!”, mcello071: “Al gedaan”, anderen gaven publiekelijk aan op wie ze zouden stemmen of steun toonden).  
+- Status: na laatste bericht (01 mei 23:12) is bekend dat Feta burgemeester is; er is nog geen bevestigde eliminatie van een actieve speler in de nachtcyclus in de beschikbare logs.
