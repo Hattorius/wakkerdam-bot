@@ -413,15 +413,20 @@ func catchUpChannel(s *discordgo.Session, channelID string, isStory bool, lastKn
 }
 
 func scheduleDailySummaries(s *discordgo.Session) {
-	for {
-		now := time.Now()
+	dutch, err := time.LoadLocation("Europe/Amsterdam")
+	if err != nil {
+		slog.Error("Failed loading Europe/Amsterdam timezone", "error", err)
+		return
+	}
 
-		// Calculate next 20:00 and next 00:00
-		next20 := time.Date(now.Year(), now.Month(), now.Day(), 20, 0, 0, 0, now.Location())
+	for {
+		now := time.Now().In(dutch)
+
+		next20 := time.Date(now.Year(), now.Month(), now.Day(), 20, 0, 0, 0, dutch)
 		if !now.Before(next20) {
 			next20 = next20.Add(24 * time.Hour)
 		}
-		next00 := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, now.Location())
+		next00 := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, dutch)
 		if !now.Before(next00) {
 			next00 = next00.Add(24 * time.Hour)
 		}
