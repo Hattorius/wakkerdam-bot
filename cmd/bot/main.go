@@ -501,10 +501,5 @@ func scheduleDailySummaries(s *discordgo.Session) {
 			}
 		}
 
-		if isMidnight {
-			config.ClearMessages()
-			config.ClearStoryMessages()
-			config.FlushMessages()
-		}
 	}
 }

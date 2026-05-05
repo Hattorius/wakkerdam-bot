@@ -158,20 +158,6 @@ func GetLastStoryMessageTime() *time.Time {
 	return lastTimestampFromLines(storyMessages)
 }
 
-func ClearMessages() {
-	messagesLock.Lock()
-	defer messagesLock.Unlock()
-
-	messages = []string{}
-}
-
-func ClearStoryMessages() {
-	storyMessagesLock.Lock()
-	defer storyMessagesLock.Unlock()
-
-	storyMessages = []string{}
-}
-
 func FlushMessages() {
 	messagesLock.RLock()
 	content := strings.Join(messages, "\n")
