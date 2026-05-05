@@ -20,33 +20,34 @@ Het spel wordt in het Nederlands gespeeld. Spelers beschuldigen elkaar, vormen a
 === SPELREGELS ===
 
 Algemene Regels:
-- Communiceer alleen in het Wakkerdamkanaal: alle spelers praten alleen in dit kanaal over het spel. Geen onderling contact over het spel, behalve voor weerwolven en cupido lovers.
-- Niet valsspelen: het is verboden om screenshots te maken van je rol of van privégesprekken met de spelleider.
-- Dood is dood: geëlimineerde spelers praten niet meer in de openbare kanalen over het spelverloop.
-- Doe actief mee: spelers die niet stemmen of niet reageren kunnen door de spelleider uit het spel worden gehaald.
+- Communiceer alleen in het Wakkerdamkanaal: Het is de bedoeling dat alle spelers alleen in dit kanaal over het spel praten. Dus ga niet onderling contact zoeken met spelers over dit spel. Uitzondering is er natuurlijk voor de weerwolven en de cupido lovers.
+- Niet valsspelen: Het is streng verboden om screenshots te maken van je rol of van privégesprekken met de spelleider.
+- Dood is dood: Als je bent geëlimineerd, praat je niet meer in de openbare kanalen over het spelverloop.
+- Doe actief mee: Spelers die niet stemmen of niet reageren, kunnen door de spelleider uit het spel worden gehaald.
+- Respect: Houd het gezellig. Discussieer op het scherpst van de snede, maar val de persoon niet aan. Het is en blijft een spelletje.
 
-De Rollen:
+De Rollen in dit Spel:
 
 Het Kamp van de Weerwolven:
-- Weerwolven: elke nacht vermoorden zij één burger. Ze geven hun keuze door aan de gamemasters tussen 23:00 en 8:00 uur.
+- Weerwolven: Dit is het groepje moordenaars dat elke nacht één burger vermoord. Weerwolven mogen dit doorgeven aan de gamemasters tussen 23:00 en 8:00 uur, idealiter zo snel mogelijk.
 
 Het Kamp van de Burgers:
-- Burgers: normale burgers zonder gave, in de grote meerderheid.
-- Ziener: kan elke nacht de rol van een speler opvragen bij de gamemaster (vanaf 23:00 via DM).
-- Heks: heeft één levensdrankje (brengt een dode tot leven, moet van tevoren worden aangegeven) en één gifdrankje (kan een speler vermoorden, kan elk moment worden ingezet).
-- Jager: wanneer hij sterft, neemt hij nog een speler mee het graf in.
-- Cupido: koppelt twee mensen die voor eeuwig samenblijven. Sterft een van de geliefden, dan sterft de andere ook.
-- De Beschermer: beveiligt elke nacht één persoon tegen een aanval.
-- De Kamikaza: kan op elk moment "ontploffen" — hij sterft zelf maar neemt ook één speler mee. Kan niet als de speler al dood is.
-- De Raaf: geeft elke nacht door wie hij "extra verdacht vindt". Deze persoon krijgt dan één extra stem tegen.
+- Burgers: De normale burgers zonder gave. Zij zijn in de grote meerderheid. Maar wie kunnen ze vertrouwen?
+- Ziener: Elke nacht kan de zieneres de rol van een speler opvragen bij de gamemaster. Dit mag vanaf 23:00 door een dm te sturen aan een van de gamemasters.
+- Heks: Beschikt over één levensdrankje en één gifdrankje. Het levensdrankje brengt een dode kandidaat tot leven. Dit kan de heks van te voren aangeven, voordat de dood wordt gemeld. Het gifdrankje kan een speler vermoorden. Dit drankje kan elk moment worden ingezet.
+- Jager: Wanneer hij sterft, neemt hij in zijn dood nog een speler mee het graf in.
+- Cupido: Deze speler koppelt twee mensen die voor eeuwig samenblijven. Deze twee spelers kunnen het spel alleen winnen als ze allebei het einde halen. Sterft een van de geliefden, dan sterft de andere geliefde van liefdes verdriet.
+- De Beschermer: Hij beveiligt elke nacht één persoon tegen een aanval.
+- De Kamikaza: Deze speler kan op elk moment "ontploffen", hij sterft dan zelf maar neemt ook één speler met zich mee het graf in. Het moment kan hij zelf kiezen. Maar niet als de speler al dood/vermoord is.
+- De Raaf: De raaf geeft elke nacht aan de gamemasters door wie hij "extra verdacht vindt". Deze persoon krijgt dan één extra stem tegen.
 
 Spelverloop:
-- De Nacht (23:00 - 8:00): speciale rollen sturen hun acties via DM naar de spelleider. Weerwolven overleggen in hun geheime chat.
-- De Ochtend (rond 9:00): de gamemaster maakt bekend wie het slachtoffer is en of er andere events hebben plaatsgevonden.
-- De Dag (9:00 - 20:00): overgebleven spelers discussiëren over wie de wolf zou kunnen zijn.
-- De Stemming (20:00 - 23:00): stemronde. De persoon met de meeste stemmen wordt geëlimineerd.
+- De Nacht (23:00 - 8:00): De speciale rollen sturen hun acties via een privé bericht (DM) naar de spelleider. De Weerwolven overleggen in hun eigen geheime chat wie hun slachtoffer wordt.
+- De Ochtend (rond 9:00): De gamemaster maakt bekend wie het volgende slachtoffer is geworden. En of er nog andere events hebben plaatsgevonden tijdens de afgelopen nacht. Bicyclebag zal dit voornamelijk doen.
+- De Dag (9:00 - 20:00): De overgebleven spelers discussiëren in het algemene kanaal over wie de wolf zou kunnen zijn.
+- De Stemming (20:00 - 23:00): Stemronde. Meestal wordt er gestemd op wie de burgers verdenken. De persoon met de meeste stemmen wordt het dorp opgehangen.
 
-Missies: soms vinden er missies plaats waarbij spelers een beloning kunnen vrijspelen. Sommige zijn openbaar, sommige geheim.
+Missies: Soms zullen tijdens het spel ook missies plaatsvinden. Spelers kunnen zo een beloning vrij spelen. De meeste missies zullen openbaar zijn, al zullen sommige missies ook in het geheim worden uitgedeeld.
 
 === EINDE SPELREGELS ===
 
