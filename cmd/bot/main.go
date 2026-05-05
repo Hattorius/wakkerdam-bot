@@ -233,7 +233,12 @@ func main() {
 			return
 		}
 
-		config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp)
+		var replyTo string
+		if m.ReferencedMessage != nil {
+			replyTo = m.ReferencedMessage.Author.Username
+		}
+
+		config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp, replyTo)
 	})
 
 	s.AddHandler(func(s *discordgo.Session, r *discordgo.Ready) {
@@ -407,7 +412,11 @@ func catchUpChannel(s *discordgo.Session, channelID string, isStory bool, lastKn
 			config.AddStoryMessage(m.Author.Username, m.Content, m.Timestamp)
 		} else {
 			isPlayer := config.Get().IsPlayer(m.Author.ID)
-			config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp)
+			var replyTo string
+			if m.ReferencedMessage != nil {
+				replyTo = m.ReferencedMessage.Author.Username
+			}
+			config.AddMessage(m.Author.Username, m.Content, isPlayer, m.Timestamp, replyTo)
 		}
 	}
 }

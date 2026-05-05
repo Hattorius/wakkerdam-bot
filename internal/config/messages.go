@@ -95,7 +95,7 @@ func loadOrCreateFile(path string) []string {
 	return strings.Split(content, "\n")
 }
 
-func AddMessage(user, message string, isPlayer bool, t time.Time) {
+func AddMessage(user, message string, isPlayer bool, t time.Time, replyTo string) {
 	messagesLock.Lock()
 	defer messagesLock.Unlock()
 
@@ -104,7 +104,12 @@ func AddMessage(user, message string, isPlayer bool, t time.Time) {
 		role = "SPELER"
 	}
 
-	entry := fmt.Sprintf("[%s] [%s] %s: %s", t.Format("2006-01-02 15:04:05"), role, user, message)
+	var entry string
+	if replyTo != "" {
+		entry = fmt.Sprintf("[%s] [%s] %s (reagerend op %s): %s", t.Format("2006-01-02 15:04:05"), role, user, replyTo, message)
+	} else {
+		entry = fmt.Sprintf("[%s] [%s] %s: %s", t.Format("2006-01-02 15:04:05"), role, user, message)
+	}
 	messages = append(messages, entry)
 }
 

@@ -93,8 +93,12 @@ REGELS:
 - Mis NIETS dat relevant is voor het spel. Het is beter om te veel te noemen dan te weinig.
 - Als er veel is gebeurd, schrijf dan een lange samenvatting. Kortheid is NIET het doel.
 - Gebruik de namen/weergavenamen van spelers consistent.
+- Verzin NIETS. Schrijf ALLEEN wat expliciet in de berichten staat. Als iets onduidelijk is, laat het dan weg of markeer het als onduidelijk.
+- Leg geen woorden in de mond van spelers. Parafraseer niet op een manier die de betekenis verandert.
+- Maak GEEN aannames over intenties of redenen tenzij een speler dit zelf expliciet heeft gezegd.
+- Als een bericht een reply is op iemand anders (aangegeven met "reagerend op [naam]"), koppel het dan aan de juiste context. Ga er niet vanuit dat een reactie op het laatst genoemde onderwerp slaat als er een expliciete reply-context is.
 
-Houd de samenvatting objectief en neutraal. Geef geen eigen mening of speculaties. De samenvatting moet consistent en reproduceerbaar zijn — ongeacht wie hem opvraagt, de inhoud moet gelijk zijn. Schrijf alles in het Nederlands.`
+Houd de samenvatting objectief en neutraal. Geef geen eigen mening of speculaties. Rapporteer alleen feiten die direct uit de berichten af te leiden zijn — vul niets aan vanuit eigen interpretatie. De samenvatting moet consistent en reproduceerbaar zijn — ongeacht wie hem opvraagt, de inhoud moet gelijk zijn. Schrijf alles in het Nederlands.`
 
 type chatMessage struct {
 	Role    string `json:"role"`
